@@ -19,11 +19,27 @@ if (getDeviceType() == "mobile") {
 
   front.addEventListener('click', event => {
     front.style.transform = "perspective(600px) rotateY(-180deg)";
-    back.style.transform = "perspective(600px) rotateY(0deg)"
+    back.style.transform = "perspective(600px) rotateY(0deg)";
   });
 
   back.addEventListener('click', event => {
-    back.style.transform = "perspective(600px) rotateY(180deg)"
-    front.style.transform = "perspective(600px) rotateY(0deg)"
+    var div = document.getElementById('svg-container');
+    back.style.transform = "perspective(600px) rotateY(180deg)";
+    front.style.transform = "perspective(600px) rotateY(0deg)";
+    Update(div);
   });
+}
+
+if (getDeviceType() == 'desktop') {
+  var front = document.getElementById('front');
+  var back = document.getElementById('back');
+
+  back.addEventListener('mouseleave', event => {
+    var div = document.getElementById('svg-container');
+    Update(div);
+  });
+}
+
+function Update(div){
+  div.innerHTML += "";
 }
