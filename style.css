@@ -68,3 +68,6 @@ body{
         transform: perspective(600px) rotateY(0deg);
     }
 }
+:focus {
+    outline: none !important;
+}
