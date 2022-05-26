@@ -4,6 +4,9 @@
     text-decoration: none;
     font-family: "montserrat";
 }
+html {
+    -webkit-tap-highlight-color:transparent;
+}
 body{
     background: #333;
 }
@@ -67,7 +70,4 @@ body{
     .card:hover > .back{
         transform: perspective(600px) rotateY(0deg);
     }
-}
-div:focus {
-    outline-style: none !important;
 }
