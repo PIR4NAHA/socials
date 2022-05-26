@@ -69,8 +69,5 @@ body{
     }
 }
 div:focus {
-    outline: none !important;
-    border: none !important;
-    -webkit-box-shadow: none !important;
-    box-shadow: none !important;
+    outline-style: none !important;
 }
