@@ -68,7 +68,7 @@ body{
         transform: perspective(600px) rotateY(0deg);
     }
 }
-.card:focus {
+div:focus {
     outline: none !important;
     border: none !important;
     -webkit-box-shadow: none !important;
