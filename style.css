@@ -68,6 +68,6 @@ body{
         transform: perspective(600px) rotateY(0deg);
     }
 }
-:focus {
+.card:focus {
     outline: none !important;
 }
