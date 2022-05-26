@@ -71,3 +71,25 @@ body{
         transform: perspective(600px) rotateY(0deg);
     }
 }
+svg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 250%;
+    height: auto;
+}
+g {
+    stroke-dasharray: 450;
+    stroke-dashoffset: 450;
+    animation: draw 2s linear forwards;
+    fill: #f1f1f1;
+  }
+path {
+    stroke: #f1f1f1;
+}
+@keyframes draw {
+    to {
+      stroke-dashoffset: 0;
+    }
+  }
